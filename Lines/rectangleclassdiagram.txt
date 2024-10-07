@@ -1,0 +1,35 @@
++-------------------+ 1
+|     MyPoint       |
++-------------------+
+| - x: int          |
+| - y: int          |
++-------------------+
+| + MyPoint(x:int, y:int) |
+| + getX(): int     |
+| + setX(x: int): void |
+| + getY(): int     |
+| + setY(y: int): void |
+| + distance(other: MyPoint): double |
+| + toString(): String |
++-------------------+
+          ^
+          |
+          |
++-------------------+ 2
+|    MyRectangle    |
++-------------------+
+| - topLeft: MyPoint|
+| - bottomRight: MyPoint | 
++-------------------+
+| + MyRectangle(topLeft: MyPoint, bottomRight: MyPoint) |
+| + getTopLeft(): MyPoint |
+| + setTopLeft(topLeft: MyPoint): void |
+| + getBottomRight(): MyPoint |
+| + setBottomRight(bottomRight: MyPoint): void |
+| + getWidth(): int |<--- finds the width by subtracting the left value from the right
+| + getHeight(): int |<--- finds the height by subtracting the bottom value from top
+| + toString(): String | <---"MyRectangle[topLeft=" + topLeft + ", bottomRight=" + bottomRight + "]"
++-------------------+
+
+
+
